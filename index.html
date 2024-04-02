@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body onload='slider()'>
+    
+<div class="banner">
+    <div class="slider">
+    
+        <img src="images/2.jpg" alt="" id="slideImg">
+    </div>
+    <div class="overlay">
+    <div class="navbar">
+        <div class="logo">Fit<span>ness</span></div>
+        <div class="menu-icons">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-bars"></i>
+         </div>
+    </div>
+    <div class="content">
+        <h1>LET'S START TO Fit<span>ness</span> </h1>
+        <h3>How do you get a fitness body in a short time? </h3>
+            <div>
+                <button type="button">Watch More</button>
+                <button type="button" class="btn2">Subscribe</button>
+            </div>
+    </div>
+</div>
+    </div>
+
+<!-- start About -->
+<div class="about">
+    <h2 class="heading">Learn how to get the perfect fitness body</h2>
+    <p>Although obtaining an ideal and healthy body seems like a complex process that takes a long time,
+         the effort made to achieve physical fitness has many positive effects
+         and repercussions on physical and psychological
+          health<br/><span>Here are some top tips to achieve this</span></p>
+          <div class="tips">
+            <div class="tip">
+                <img src="images/7.jpg" alt="">
+                <div class="text">
+                <h3>Daily Exercise </h3>
+                <p>Exercise daily for at least an hour without exhausting yourself
+                     too much by running and jogging, 
+                    and try to practice some type of moderate physical activity in your daily life.</p>
+                </div>
+            </div>
+            <div class="tip">
+                <img src="images/8.jpg" alt="">
+                <div class="text">
+                <h3>Eat Healthy Foods </h3>
+                <p>Eat healthy foods in appropriate quantities during the day,
+                     avoid fast and processed foods, and try to focus on healthy foods. Such as fruits, vegetables, 
+                     and lean meats; Such as turkey, chicken, and seafood; Such as shrimp and tilapia</p>
+                    </div>
+            </div>
+            <div class="tip">
+                <div class="text">
+                    <img src="images/9.jpg" alt="">
+                <h3>Calorie Tracking</h3>
+                <p>Track calories during the day; Because losing <br/>weight and striving 
+                    to obtain a fit and fit body<br/> requires performing physical 
+                    exercises with <br/>the goal of burning more calories than<br/> the calories consumed.</p>
+                    </div>
+            </div>
+            <div class="tip">
+                <img src="images/10.jpg" alt="">
+                <div class="text">
+                <h3>Good sleep</h3>
+                <p>Make sure you sleep well and promise yourself as much sleep as possible for eight hours.
+                     It is necessary to get enough sleep to restore the body's activity..</p>
+                     </div>
+            </div>
+          </div>
+</div>
+
+<!--Fitness exercises -->
+         <div class="exercises">
+          <h1>Fitness Exercises At Home</h1>
+          <hr>
+          <div class="exercise">
+            <div class="exe">
+                <img src="images/11.jpg" alt="">
+                <h2>Press-Up</h2>
+                <p>To learn more about the Press Up click Show more</p>
+                <a href="#">Show More</a>
+            </div>
+            <div class="exe">
+                <img src="images/12.jpg" alt="">
+                <h2>Skipping</h2>
+                <p>To learn more about the Skipping click Show more</p>
+                <a href="#">Show More</a>
+            </div>
+            <div class="exe">
+                <img src="images/13.jpg" alt="">
+                <h2>Squat</h2>
+                <p>To learn more about the Squat click Show more</p>
+                <a href="#">Show More</a>
+            </div>
+            <div class="exe">
+                <img src="images/14.jpg" alt="">
+                <h2>Plank</h2>
+                <p>To learn more about the Plank click Show more</p>
+                <a href="#">Show More</a>
+            </div>
+            <div class="exe">
+                <img src="images/15.jpg" alt="">
+                <h2>Crunch</h2>
+                <p>To learn more about the Crunch click Show more</p>
+                <a href="#">Show More</a>
+            </div>
+          </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+    var slideImg = document.getElementById("slideImg");
+    var images = new Array(
+        "images/2.jpg",
+        "images/4.jpg",
+        "images/5.jpg",
+        "images/6.jpg"
+    );
+    var len = images.length;
+    var i = 0;
+    function slider(){
+        if(i > len-1){
+            i = 0;
+        }
+        slideImg.src = images[i];
+        i++;
+        setTimeout('slider()',3000);
+    }
+</script>
+
+
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
